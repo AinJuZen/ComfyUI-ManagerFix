@@ -20,6 +20,28 @@
 
 ---
 
+## 30 秒上手
+
+**不装东西，Python 3.8+ 就够，没有第三方依赖。**
+
+```
+① 下载这个仓库（Code → Download ZIP，或 git clone）
+② 双击 `检查.bat`   —— 只看现状，一个字节都不改
+③ 有红字再双击 `修复.bat` —— 改完会自己去拉一遍清单，拉到了才算成功
+```
+
+**命令行等价：**
+
+```bash
+python managerfix.py --check      # 只诊断
+python managerfix.py --fix        # 修（幂等）
+python managerfix.py --verify     # 只验网络
+```
+
+**它会改 Manager 的源码，所以第 ② 步别跳过去——先看清现状再动手。**
+
+---
+
 ## One-liner (EN)
 
 ComfyUI-Manager fetches its node/model lists from `raw.githubusercontent.com`, which is
